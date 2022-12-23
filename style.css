@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --darkCyan: hsl(158, 36%, 37%);
+  --darkBlue: hsl(212, 21%, 14%);
+  --grayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --fraunces: "Fraunces", serif;
+  --montserrat: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--cream);
+}
+
+.card {
+  width: 580px;
+  height: 430px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productImage {
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+}
+
+.productDescription {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 1.5rem 2.5rem;
+}
+
+h3 {
+  font-family: var(--montserrat);
+  color: var(--grayishBlue);
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.name {
+  font-family: var(--fraunces);
+  font-size: 2.2rem;
+  color: var(--darkBlue);
+  line-height: 2rem;
+}
+
+.description {
+  font-family: var(--montserrat);
+  font-weight: 500;
+  color: var(--grayishBlue);
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.priceOnSales {
+  color: var(--darkCyan);
+  font-family: var(--fraunces);
+  font-size: 2rem;
+}
+
+.priceBeforeSales {
+  color: var(--grayishBlue);
+  font-family: var(--montserrat);
+  text-decoration: line-through;
+  font-size: 0.7rem;
+}
+
+.button {
+  align-self: center;
+  text-decoration: none;
+  background-color: var(--darkCyan);
+  color: var(--white);
+  padding: 1rem 4rem;
+  width: 220px;
+  border-radius: 7px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.button:hover {
+  background-color: hsl(157, 36%, 18%);
+}
