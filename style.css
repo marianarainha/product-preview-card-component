@@ -44,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   padding: 1.5rem 2.5rem;
 }
 
@@ -107,6 +106,56 @@ h3 {
   gap: 0.7rem;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: hsl(157, 36%, 18%);
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    display: block;
+  }
+
+  .card {
+    margin: 1.5rem auto;
+    height: 95vh;
+    width: 92vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  .productImage {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 92vw;
+  }
+  .productDescription {
+    padding: 1.5rem 1.4rem;
+    width: 92vw;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .name,
+  .priceOnSales {
+    font-size: 2.3rem;
+  }
+
+  h3,
+  .priceBeforeSales {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 1.2rem 4rem;
+    width: 300px;
+  }
 }
