@@ -10,6 +10,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+   - [What I learned](#what-i-learned)
 - [Author](#author)
 
 
@@ -40,6 +41,38 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### What I learned
+
+Using the <picture> HTML element with two <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios. 
+
+```html
+      <picture>
+          <source
+            srcset="./images/image-product-mobile.jpg"
+            media="(max-width: 500px)"
+          />
+          <img
+            class="productImage"
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+          />
+        </picture>
+```
+
+Turning an element only visible to screen readers with CSS
+
+```css
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+```
+
 
 ## Author
 
