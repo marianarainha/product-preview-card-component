@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-Using the <picture> HTML element with two <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios. 
+Using the picture HTML element with two <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios. 
 
 ```html
       <picture>
@@ -78,4 +78,4 @@ Turning an element only visible to screen readers with CSS
 
 - Website - [Github](https://github.com/marianarainha)
 - Frontend Mentor - [@marianarainha](https://www.frontendmentor.io/profile/marianarainha)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+
